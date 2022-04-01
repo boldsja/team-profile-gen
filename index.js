@@ -1,5 +1,8 @@
 const inquirer = require("inquirer");
 const Manager = require("./lib/manager");
+const Engineer = require("./lib/engineer");
+const Intern = require("./lib/intern");
+const Employee = require("./lib/employee");
 const path = require("path");
 const fs = require("fs");
 
@@ -42,6 +45,66 @@ function mainMenu() {
     })
   }
 
+  function createEngineer() {
+
+    inquirer.prompt([
+      {
+        name: "name",
+        type: "input",
+        message: "What is the engineer's name?"
+      },
+      {
+        name: "id",
+        type: "input",
+        message: "What is the engineer's ID?"
+      },
+      {
+        name: "email",
+        type: "input",
+        message: "What is the engineer's email?"
+      },
+      {
+        name: "github",
+        type: "input",
+        message: "What is their github username?"
+      },
+    ]).then((response)=>{
+      const engineer = new Engineer(response.name, response.id, response.email, response.github)
+      teamArray.push(engineer)
+      askJob()
+    })
+  }
+
+  function createIntern() {
+
+    inquirer.prompt([
+      {
+        name: "name",
+        type: "input",
+        message: "What is the intern's name?"
+      },
+      {
+        name: "id",
+        type: "input",
+        message: "What is the intern's ID?"
+      },
+      {
+        name: "email",
+        type: "input",
+        message: "What is the intern's email?"
+      },
+      {
+        name: "school",
+        type: "input",
+        message: "What is the intern's school?"
+      },
+    ]).then((response)=>{
+      const intern = new Intern(response.name, response.id, response.email, response.school)
+      teamArray.push(intern)
+      askJob()
+    })
+  }
+
   const askJob = () => {
     inquirer.prompt(
       {
@@ -56,13 +119,13 @@ function mainMenu() {
       // }
       switch(response.job){
         case "Engineer":
-          // createEngineer()
+          createEngineer()
           break;
         case "Manager":
           createManager()
           break;
         case "Intern":
-          // createIntern()
+          createIntern()
           break;
           default:
             buildTeam()
