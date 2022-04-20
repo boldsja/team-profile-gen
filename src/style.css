@@ -1,0 +1,30 @@
+* {
+    align-content: center;
+    flex: auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+.jumbotron {
+    background-color: #edf2fb;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.lead {
+    font-style: italic;
+}
+
+div.card {
+    text-align: center;
+    background-color: #c1d3fe;
+    margin: 2%;
+}
+
+h5.card-title {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+}
