@@ -16,7 +16,7 @@ const generateTeam = team => {
         <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Manager</h5>
-          <p class="card-title">${manager.getName()}</p>
+          <p class="card-title">Name:${manager.getName()}</p>
           <p class="card-text">Id: ${manager.getID()}</p>
           <p class="card-text"><a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
           <p class="card-text">${manager.getOfficeNumber()}</p>
@@ -29,7 +29,7 @@ const generateTeam = team => {
         <div class="card" style="width: 18rem;">
         <div class="card-body">
         <h5 class="card-title">Engineer</h5>
-          <p class="card-text">Id: ${engineer.getName()}</p>
+          <p class="card-text">Name: ${engineer.getName()}</p>
           <p class="card-text">Id: ${engineer.getID()}</p>
           <p class="card-text"><a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></p>
           <p class="card-text">Github: ${engineer.getGithub()}</p>
@@ -42,7 +42,7 @@ const generateTeam = team => {
         <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Intern</h5>
-          <p class="card-text">Id: ${intern.getName()}</p>
+          <p class="card-text">Name: ${intern.getName()}</p>
           <p class="card-text">Id: ${intern.getID()}</p>
           <p class="card-text"><a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></p>
           <p class="card-text">School: ${intern.getSchool()}</p>
