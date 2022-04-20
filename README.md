@@ -16,6 +16,6 @@ https://user-images.githubusercontent.com/100175351/164235072-3e276cd7-34e5-4c76
 
 
 ## Link to Final Page
-[Team Profile Generator link to final page](https://boldsja.github.io/PasswordGenerator/) 
+[Team Profile Generator link to final page](https://boldsja.github.io/team-profile-gen/) 
 
-[Github Repo](https://github.com/boldsja/PasswordGenerator)
+[Github Repo](https://github.com/boldsja/team-profile-gen)
