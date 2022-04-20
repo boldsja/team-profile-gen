@@ -8,7 +8,11 @@ The objective was to create a generated team in html using node and user input v
 
 ![Final page screenshot](./assets/team-gen-screenshot.png) 
 
-![Video Walkthrough](./assets/Team%20Generator.mov)
+
+
+
+https://user-images.githubusercontent.com/100175351/164235072-3e276cd7-34e5-4c76-8cdf-bab35df00e87.mov
+
 
 
 ## Link to Final Page
